@@ -51,9 +51,12 @@ MonsterAttack.java     |  MonsterAttack has the following private data variables
  ## Homework 5 folder includes:
 Class name  | Task
 -------------    | -------------
-Purpose    | 
-Animal.java     |  
- AttackMonitor.java     | 
-----     | 
-----     | 
-----     | 
+Purpose    | Write an application that models a brutal war for survival among small animals.
+Animal.java     |  All the animals in this lab inherit from the abstract class Animal. Animal has a name and a weight in grams. It has a public method eat, which takes a double parameter that represents the weight in grams of a food item and adds that much to the animal's weight. It also has a call() method. Since different animals have different calls, call() must be an abstract method.
+ AnimalDriver.java     | Create a driver class with reasonable results.
+Bird.java     | The concrete classes Bird extends Prey in appropriate ways.
+Cat.java     | The concrete class Cat extends predator and implements call() by showing a message like "Fifi says 'Meow'". It overrides toString() to return a message similar to "Fifi is a Cat weighing 982.3 grams."
+Mouse.java     | The concrete classes Mouse extends Prey in appropriate ways.
+Predator.java     | The abstract class Predator extends Animal by adding a predate() method. Predate() takes a reference to a Prey animal (one that extends Prey), calls the instance Animal's (that is, the Predator's) eat() method with the weight of the Prey animal as parameter, and shows a message similar to "Thor The Wolf eats Bambi," using the actual names of the Predator and Prey animals.
+Prey.java     | The abstract class Prey extends Animal by adding a flee() method. Since different Prey animals flee differently, this method must be abstract.
+
