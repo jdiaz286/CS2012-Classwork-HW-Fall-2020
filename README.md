@@ -1,5 +1,5 @@
 # CS2012-Classwork-HW-Fall-2020
-This is just for me, it's all the work I used during my CS 2012 class at CSULA
+This is just for me, it's all my work I created during my CS 2012 class at CSULA
 * This is an eclipse workspace, to run any file please use whole workspace
 
 ## Homework 1 folder includes:
