@@ -1,0 +1,49 @@
+.highlightedAnswer {
+	-fx-font-size: 70%;
+	height:5px;
+	-fx-border-width: 1;
+	width: 38px;
+	-fx-background-color:#c6eb96;
+	-fx-stroke-border: black;
+	border-style: solid;
+	-fx-alignment: center;
+}
+
+.grid {
+	-fx-font-size: 200%;
+}
+
+.inputHBox {
+	-fx-font-size: 99%;
+	-height:99%;
+	-fx-alignment: center;
+}
+
+.mainTitleBox {
+	-fx-background-color: #bab8b7;
+	-fx-font-size: 100%;
+	-fx-alignment: center;
+}
+
+.productLabels {
+	-fx-font-size: 70%;
+	-fx-background-color: #4c484d;
+	-fx-border-width: 1;
+    -fx-stroke-border: black;
+	border-style: solid;
+	-fx-alignment: center;
+	height:5px;
+	width: 38px;
+
+}
+
+.firstLabel {
+	-fx-font-size: 70%;
+	-fx-border-width: 1;
+    -fx-stroke-border: black;
+	-border-style:solid;
+	-fx-background-color: #f0291a;
+	-fx-alignment: center;
+	height:5px;
+	width: 38px;
+}

@@ -1,0 +1,28 @@
+.traversedLabel{
+	-fx-background-color: #030303;
+}
+
+.nonTraversedLabel{
+	-fx-background-color: #a8a4a3;
+}
+
+.currentLocationLabel{
+	-fx-background-color: #ff2e1f;
+}
+
+.topLeftLabels{
+	-fx-background-color: #32fff1;
+	-fx-max-width:500;
+	-fx-font-size: 150%;
+} 
+
+.topRightLabels{
+	-fx-font-size: 150%;
+	-fx-padding: 5px;
+
+}
+
+.topCenterStyle{
+	-fx-alignment: center;
+
+}

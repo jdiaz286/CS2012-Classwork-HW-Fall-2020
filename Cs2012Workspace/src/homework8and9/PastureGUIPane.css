@@ -1,0 +1,38 @@
+.topHeaderLabel{
+	-fx-max-width:500;
+	-fx-font-size: 150%;
+	-fx-text-fill: #2bff01;
+}
+
+.topHeaderHBox{
+	-fx-background-color: #787878;
+	-fx-alignment: center;
+}
+.bottomHBox{
+	-fx-alignment: center;
+}
+
+.startAndEnd{
+	-fx-background-color: #29ffdf;
+	-fx-text-fill: black;
+	-fx-alignment: center;
+}
+.pasture{
+	-fx-background-color: #804000;
+}
+.playerPosition{
+	-fx-background-color: #ff8040;
+}
+.greyFence{
+	-fx-background-color: #a8a6a5;
+	-fx-alignment: center;
+}
+.squareSpace{
+	-fx-background-color: #28b801;
+}
+.gridPaneStyle{
+	-fx-background-color: #a8a6a5;
+    -fx-vgap: 2;
+    -fx-hgap: 2;
+    -fx-padding: 1;
+}
