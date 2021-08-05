@@ -60,3 +60,25 @@ Mouse.java     | The concrete classes Mouse extends Prey in appropriate ways.
 Predator.java     | The abstract class Predator extends Animal by adding a predate() method. Predate() takes a reference to a Prey animal (one that extends Prey), calls the instance Animal's (that is, the Predator's) eat() method with the weight of the Prey animal as parameter, and shows a message similar to "Thor The Wolf eats Bambi," using the actual names of the Predator and Prey animals.
 Prey.java     | The abstract class Prey extends Animal by adding a flee() method. Since different Prey animals flee differently, this method must be abstract.
 
+ ## Homework 6 folder includes:
+Class name  | Task
+-------------    | -------------
+Purpose    | Set up a JavaFX GUI-based program that shows a 10 X 10 grid of labels that forms a multiplication table, with the labels displaying the multiplication problems, rather than the answers. Provide a text input field and a button with an event handler that reads an integer value from the text input and changes the CSS styling in some obvious way for all problems in the table with the given answer. When a new answer is entered and the button is clicked, change all the labels back to the original style, then change the labels showing problems for the new answer to the new style. Use CSS, not setters, for all the styling.
+Homework6.java     | My solution uses a GridPane, several HBoxes, a VBox, and a BorderPane, as well as a Button, a TextField and many Labels. You may use the image posted as hw6.png as an example, but feel free to make your GUI look different from this as long as your work meets the specifications above, looks good, and is easy to understand.
+ ----     | There is no easy way to access components in a GridPane by row and column indices, so create a two-D array of Labels and add the labels to it at the same time you add them to the GridPane.  You can get to the individual labels using their subscripts in the array.
+
+Result for homework 6 should look something similar to this:
+ 
+ ![lab7image](https://user-images.githubusercontent.com/55372515/128221529-5ba7aaf5-ccee-423f-afaa-1f1aa1807fdd.png)
+ 
+  ## Homework 7 folder includes:
+Class name  | Task
+-------------    | -------------
+Purpose    | Etch-A-Sketch is a classic toy in which a user draws an image using a cursor that leaves a trail.  The toy uses two dials to control the cursor, but we will use the scroll keys of the computer keyboard.  On an Etch-A-Sketch, the trail can be erased by shaking the toy, but we will accomplish this using a Label marked "Shake. "  Don't use a Button, because this will make it harder to handle the scroll key events. Represent the screen with a GridPane containing Labels.  Labels will have three different css classes, one for labels that have not been traversed, one for labels which have been traversed but are not currently the cursor location, and one for the current cursor location.  Once components have been added to a GridPane, there is no way to reference them by column and row, so create a separate 2D array of Labels and add the labels to the array at the same time you add them to the GridPane.  You can change the css classes of the labels by accessing them by row and column in the array.
+Game.java     | Create a Game class with an int row and column which will represent the current location of the cursor.  Game will also need a method to determine whether a row, column pair represents a valid square on the screen (that is, neither the row nor the column may be less than zero, the row can't be greater than the maximum row on the screen, and the column can't be greater than the maximum column.)  Set the number of rows and columns in the constructor.
+ GUI.java     | Put the GUI code in a class that extends BorderPane and has a constructor that takes the numbers of rows and columns that will be on the screen. See the Click Counter for some ideas about how to set up the GUI.  You will need a label to show the current location and a shake label with an event handler that changes all the labels' css classes back to the unoccupied style.  I suggest you put both of these in an HBox.
+  Main.java     | Put the start method in a class called Main.  Start() should instantiate a Game and then instantiate the GUI, sending the numbers of rows and columns to both constructors.  Think out how to connect the Game to the GUI. Link to the stylesheet in Main.
+   Homework7.css     | Use a css file to control the appearance of your GUI.
+ 
+Result for homework 7 should look something similar to this:
+![etch-2](https://user-images.githubusercontent.com/55372515/128291387-27f1a439-6687-4d12-9371-e304f1227b23.jpg)
